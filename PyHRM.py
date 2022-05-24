@@ -12,7 +12,7 @@
 
 # In[ ]:
 
-get_ipython().magic(u'matplotlib inline')
+
 
 import numpy as np
 import pandas as pd
@@ -23,8 +23,8 @@ import matplotlib.pyplot as plt
 
 # In[ ]:
 
-df = pd.read_csv('Sample-HRM-p50-genotyping.csv')
-plt.plot(df.iloc[:,[0]],df.iloc[:,1:])
+df = pd.read_csv('melt_curve.csv')
+plt.plot(df.iloc[:,0],df.iloc[:,1])
 plt.show()
 
 
